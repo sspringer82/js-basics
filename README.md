@@ -22,6 +22,8 @@
 - https://standardjs.com/
 - https://google.github.io/styleguide/jsguide.html
 - https://github.com/airbnb/javascript
+- https://babeljs.io/
+- https://webpack.js.org/
 
 ## Start der App
 

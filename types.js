@@ -17,7 +17,8 @@ hoisting();
 // https://developer.mozilla.org/de/docs/Glossary/einfache_datenelemente
 let myString = 'hallo "Welt"'; // gleichwertig mit ""
 let myString2 = "hallo 'Welt'"; // gleichwertig mit ''
-let myString3 = `hallo Welt`; //
+let myString3 = `hallo Welt`; // Template Strings, erlauben Zeilenumbrüche + Variablenevaluation
+let myTplString = `${myString2} ${myString3}`;
 
 let myNumber = 4;
 let myNumber2 = 4.2;
