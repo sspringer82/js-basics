@@ -3,11 +3,14 @@ const myObj = {
   lastname: 'Müller',
 };
 
+myObj.firstname = 'Lotta'; // funktioniert, weil nur Objektreferenz konstant
+
 console.log(myObj);
 
 class Person {
   firstname: string;
   lastname: string;
+  age = 42;
 
   constructor(firstname: string, lastname: string) {
     // hallo klaus
