@@ -19,7 +19,7 @@ class Person {
   }
 }
 
-class User extends Person {
+class UserObj extends Person {
   // shortcut für definition von properties und zuweisung
   // constructor(public firstname: string; public lastname: string) {}
 
@@ -29,5 +29,5 @@ class User extends Person {
   }
 }
 
-const klaus = new User('Klaus', 'Müller');
+const klaus = new UserObj('Klaus', 'Müller');
 console.log(klaus.getFullname());

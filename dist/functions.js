@@ -63,21 +63,19 @@ const arrowAdd2 = (a, b) => a + b;
 // const pow = a => a * a;
 // TS minimalversion:
 const pow = (a) => a * a;
-///* funktioniert nicht weil this ist nicht die instanz der klasse
+/* funktioniert nicht weil this ist nicht die instanz der klasse
 class Foo {
-    constructor() {
-        this.name = 'Rüdiger';
-    }
-    renameAfter1Second() {
-        setTimeout(function () {
-            this.name = 'Hans-Peter';
-            console.log(this.name);
-            console.log(this);
-        }, 1000);
-    }
-}
+  name = 'Rüdiger';
+  renameAfter1Second() {
+    setTimeout(function () {
+      this.name = 'Hans-Peter';
+      console.log(this.name);
+      console.log(this);
+    }, 1000);
+  }
+}*/
 // Arrow function hat this immer vom umgebenden Kontext
-class Foo2 {
+class Foo {
     constructor() {
         this.name = 'Rüdiger';
     }
