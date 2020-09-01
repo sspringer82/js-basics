@@ -33,3 +33,10 @@ Bei einer bestehenden Applikation: `npm install`
 
 `npm start` => scripts > start
 `npm run start:dev` => scripts > start:dev
+
+## TypeScript
+
+`npm install typescript` => lokale installation von typescript
+`npx tsc --init` => tsconfig erzeugen
+`npx tsc` => transpile it!
+Alternativ npm script in der package.json

@@ -8,7 +8,8 @@
     "prestart": "echo \"this is pre start\"",
     "poststart": "echo \"this is post start\"",
     "start:dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/sspringer82/js-basics#readme",
   "dependencies": {
     "immutability-helper": "^3.1.1",
-    "is-odd": "^3.0.1"
+    "is-odd": "^3.0.1",
+    "typescript": "^4.0.2"
   }
 }
