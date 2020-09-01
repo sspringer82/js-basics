@@ -25,4 +25,6 @@ function render() {
   div.textContent = 'Klausi!';
   container.appendChild(div);
 }
-render();
+document.addEventListener('DOMContentLoaded', function (event) {
+  render();
+});
