@@ -24,12 +24,12 @@ let myNumber2 = 4.2;
 let myBoolean = true;
 let myNull = null; // kein Wert - das gehört euch
 let myUndefined = undefined; // kein Wert - das gehört der Engine (nur für Vergleiche verwenden)
-let mySymbol = Symbol('foo');
+let mySymbol = Symbol();
 
-// const o = {
-//   mySymbol: 'foo',
-// };
+const o = {
+  [mySymbol]: 'foo',
+};
 
-// console.log(o[mySymbol]);
+console.log(o[mySymbol]);
 
 // composites (by-reference)
