@@ -1,23 +1,28 @@
-const responsePromise = fetch('http://localhost:8080/users');
+// (async function () {
+//   try {
+//     const response = await fetch('http://localhost:8080/users');
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (e) {
+//     console.error(e);
+//   }
+// })();
 
-console.log('before');
-responsePromise
-  .then((response) => {
-    return response.json();
-  })
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((e) => {
-    console.log(e);
-  });
-console.log('after');
+async function fetchUserData() {
+  try {
+    const response = await fetch('http://localhost:8080/users');
+    const data = await response.json();
+    return data;
+  } catch (e) {
+    console.error(e);
+  }
+}
+fetchUserData().then((data) => console.log(data));
 
-// json() {
-//   const data = '';
-//   return new Promise((resolve, reject) => {
-//     ReadableStream.subscribe(d => data += d);
-//     ReadableStream.end(resolve(data));
-//     ReadableStream.error(reject(new Error('foo')));
-//   });
-// }
+function render() {
+  const container = document.getElementById('container');
+  const div = document.createElement('div');
+  div.textContent = 'Klausi!';
+  container.appendChild(div);
+}
+render();
