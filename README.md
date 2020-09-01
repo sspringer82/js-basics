@@ -40,3 +40,10 @@ Bei einer bestehenden Applikation: `npm install`
 `npx tsc --init` => tsconfig erzeugen
 `npx tsc` => transpile it!
 Alternativ npm script in der package.json
+
+# FE/BE example
+
+`npm i http-server json-server`
+
+`npm run frontend` => frontend script in package.json
+`npm run backend` => backend script in package.json
