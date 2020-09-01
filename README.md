@@ -18,6 +18,10 @@
 - https://nodejs.org/en/
 - https://choosealicense.com/ => Lizenzierung
 - https://docs.npmjs.com/misc/scripts
+- https://developer.mozilla.org/de/
+- https://standardjs.com/
+- https://google.github.io/styleguide/jsguide.html
+- https://github.com/airbnb/javascript
 
 ## Start der App
 
