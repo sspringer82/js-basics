@@ -4,6 +4,11 @@
       "id": 1,
       "firstname": "Klaus",
       "lastname": "Müller"
+    },
+    {
+      "id": 2,
+      "firstname": "Regine",
+      "lastname": "Meier"
     }
   ]
 }

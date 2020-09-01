@@ -17,13 +17,15 @@ async function fetchUserData() {
     console.error(e);
   }
 }
-fetchUserData().then((data) => console.log(data));
+fetchUserData().then((data) => render(data));
 
-function render() {
+function render(data) {
   const container = document.getElementById('container');
-  const div = document.createElement('div');
-  div.textContent = 'Klausi!';
-  container.appendChild(div);
+  data.forEach((user) => {
+    const row = document.createElement('div');
+    row.textContent = `${user.firstname} ${user.lastname}`;
+    container.appendChild(row);
+  });
 }
 document.addEventListener('DOMContentLoaded', function (event) {
   render();
