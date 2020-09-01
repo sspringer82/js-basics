@@ -43,3 +43,46 @@ modify(myByValue);
 console.log(myByValue);
 
 // composites (by-reference)
+const myProp = 'firstname';
+const myObj = {
+  [myProp]: 'Klaus',
+  lastname: 'Müller',
+};
+const myObj2 = new Object(); // macht fast keiner
+
+console.log(myObj.firstname);
+console.log(myObj[myProp]);
+
+const myArr = [1, 2, 3];
+
+const result = myArr.map((a) => a * a).reduce((prev, curr) => prev + curr, 0);
+
+const mySet = new Set();
+const myMap = new Map();
+
+const myReference = { name: 'Klaus' };
+// ANTIPATTERN: referenz modifizieren
+function modify2(value) {
+  value.name = 'Otto';
+  console.log(value.name);
+}
+modify2(myReference);
+console.log(myReference.name);
+
+function modify3(value) {
+  const clone = { ...value };
+  // Array const clone = [... value];
+  clone.name = 'Maria';
+  console.log(clone.name);
+}
+
+// Kopieren von Objekten
+// - https://github.com/immutable-js/immutable-js
+// - https://github.com/immerjs/immer
+// - https://github.com/kolodny/immutability-helper
+
+const update = require('immutability-helper');
+
+const myCopy = update(myObj, { firstname: { $set: 'Claudia' } });
+
+console.log(myCopy);
