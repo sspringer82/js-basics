@@ -16,3 +16,10 @@
 
 - https://www.npmjs.com/
 - https://nodejs.org/en/
+- https://choosealicense.com/ => Lizenzierung
+- https://docs.npmjs.com/misc/scripts
+
+## Start der App
+
+`npm start` => scripts > start
+`npm run start:dev` => scripts > start:dev

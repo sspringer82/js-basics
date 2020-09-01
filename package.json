@@ -4,6 +4,10 @@
   "description": "## Contents",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "prestart": "echo \"this is pre start\"",
+    "poststart": "echo \"this is post start\"",
+    "start:dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +15,7 @@
     "url": "git+https://github.com/sspringer82/js-basics.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sebastian Springer <sebastian.springer@maibornwolff.de>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sspringer82/js-basics/issues"
