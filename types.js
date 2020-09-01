@@ -81,6 +81,7 @@ function modify3(value) {
 // - https://github.com/immerjs/immer
 // - https://github.com/kolodny/immutability-helper
 
+// to use this: npm install immutability-helper
 const update = require('immutability-helper');
 
 const myCopy = update(myObj, { firstname: { $set: 'Claudia' } });
