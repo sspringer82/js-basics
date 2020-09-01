@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sspringer82/js-basics/issues"
   },
-  "homepage": "https://github.com/sspringer82/js-basics#readme"
+  "homepage": "https://github.com/sspringer82/js-basics#readme",
+  "dependencies": {
+    "is-odd": "^3.0.1"
+  }
 }
