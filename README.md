@@ -47,3 +47,10 @@ Alternativ npm script in der package.json
 
 `npm run frontend` => frontend script in package.json
 `npm run backend` => backend script in package.json
+
+# Node example
+
+`npm install axios`
+
+`npm run backend` => backend script in package.json
+`npx ts-node src/userData.ts`
