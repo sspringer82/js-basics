@@ -15,9 +15,9 @@ hoisting();
 
 // primitives (by-value)
 // https://developer.mozilla.org/de/docs/Glossary/einfache_datenelemente
-let myString = 'hallo "Welt"';
-let myString2 = "hallo 'Welt'";
-let myString3 = `hallo Welt`;
+let myString = 'hallo "Welt"'; // gleichwertig mit ""
+let myString2 = "hallo 'Welt'"; // gleichwertig mit ''
+let myString3 = `hallo Welt`; //
 
 let myNumber = 4;
 let myNumber2 = 4.2;
@@ -31,5 +31,14 @@ const o = {
 };
 
 console.log(o[mySymbol]);
+
+let myByValue = 'original';
+
+function modify(val) {
+  val = 'modification';
+  console.log(val);
+}
+modify(myByValue);
+console.log(myByValue);
 
 // composites (by-reference)
