@@ -21,5 +21,9 @@
 
 ## Start der App
 
+(installation eines Pakets: `npm install is-odd`)
+
+Bei einer bestehenden Applikation: `npm install`
+
 `npm start` => scripts > start
 `npm run start:dev` => scripts > start:dev
