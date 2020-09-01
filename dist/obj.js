@@ -1,18 +1,23 @@
 "use strict";
-var myObj = {
+const myObj = {
     firstname: 'Maria',
     lastname: 'Müller',
 };
 console.log(myObj);
-var User = /** @class */ (function () {
-    function User(firstname, lastname) {
+class Person {
+    constructor(firstname, lastname) {
+        // hallo klaus
         this.firstname = firstname;
         this.lastname = lastname;
     }
-    User.prototype.getFullname = function () {
-        return this.firstname + " " + this.lastname;
-    };
-    return User;
-}());
-var klaus = new User('Klaus', 'Müller');
+}
+class User extends Person {
+    // shortcut für definition von properties und zuweisung
+    // constructor(public firstname: string; public lastname: string) {}
+    getFullname() {
+        // return this.firstname + ' ' + this.lastname;
+        return `${this.firstname} ${this.lastname}`;
+    }
+}
+const klaus = new User('Klaus', 'Müller');
 console.log(klaus.getFullname());

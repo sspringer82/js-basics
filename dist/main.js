@@ -1,4 +1,4 @@
 "use strict";
-var firstname;
+let firstname;
 firstname = 'Klaus';
 console.log('Hello Typescript World');

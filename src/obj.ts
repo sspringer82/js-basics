@@ -5,22 +5,25 @@ const myObj = {
 
 console.log(myObj);
 
-class User {
+class Person {
   firstname: string;
   lastname: string;
 
   constructor(firstname: string, lastname: string) {
+    // hallo klaus
     this.firstname = firstname;
     this.lastname = lastname;
   }
+}
 
-  getFullname() {
-    return `${this.firstname} ${this.lastname}`;
-    // return this.firstname + ' ' + this.lastname;
-  }
-
+class User extends Person {
   // shortcut für definition von properties und zuweisung
   // constructor(public firstname: string; public lastname: string) {}
+
+  getFullname() {
+    // return this.firstname + ' ' + this.lastname;
+    return `${this.firstname} ${this.lastname}`;
+  }
 }
 
 const klaus = new User('Klaus', 'Müller');
